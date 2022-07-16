@@ -1,0 +1,112 @@
+<button (click)="onclick('text')">Read More</button>
+
+<button (click)="onclick('image')">See More</button>
+
+<button (click)="onclick('video')">Watch More</button>
+
+<!--will create if condition my default it will be hide on click-->
+<ng-container *ngIf="visible">
+  <div style="background-color: pink">
+    <h4>
+      Text Here
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet saepe
+        repudiandae autem veniam. Totam expedita autem mollitia, illo iste,
+        deserunt laboriosam fuga cumque quod commodi, ratione praesentium iusto
+        ipsa alias.
+      </p>
+    </h4>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="show">
+  <div style="background-color: lightblue">
+    <h4>
+      Image Here
+      <img
+        src="https://miro.medium.com/max/1400/1*7WeQGvRghyIVWVliG3kMsQ.png"
+        alt=""
+      />
+    </h4>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="shows">
+  <div style="background-color: yellow">
+    <h4>Image Here</h4>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/AAu8bjj6-UI"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div> </ng-container
+>-
+<!-----
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <!---this is a button with ternary operator and click function--
+      <button (click)="onclick()" type="button" class="btn">
+        {{ ReadMore ? "Read More" : "Read Less" }}
+      </button>
+
+      <!--will create if condition my default it will be hide on click--
+      <ng-container *ngIf="visible">
+        <div style="background-color: pink">
+          <h4>
+            Text Here
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+              saepe repudiandae autem veniam. Totam expedita autem mollitia,
+              illo iste, deserunt laboriosam fuga cumque quod commodi, ratione
+              praesentium iusto ipsa alias.
+            </p>
+          </h4>
+        </div>
+      </ng-container>
+
+      <!-----
+      <button (click)="onclick()" type="button" class="btn">
+        {{ SeeImage ? "Click Here" : "Image" }}
+      </button>
+
+      <!--will create if condition my default it will be hide on click--
+      <ng-container *ngIf="show">
+        <div style="background-color: lightblue">
+          <h4>
+            Image Here
+            <img
+              src="https://miro.medium.com/max/1400/1*7WeQGvRghyIVWVliG3kMsQ.png"
+              alt=""
+            />
+          </h4>
+        </div>
+      </ng-container>
+      <button (click)="onclick()" type="button" class="btn">
+        {{ SeeVideo ? "Click Here" : "Video" }}
+      </button>
+
+      <!--will create if condition my default it will be hide on click--
+      <ng-container *ngIf="show">
+        <div style="background-color: yellow">
+          <h4>Image Here</h4>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/AAu8bjj6-UI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </ng-container>-
+    </div>
+  </div>
+</div>
+
+<button type="button" (click)="func()">Imgae</button>--->
